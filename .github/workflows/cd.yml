@@ -43,15 +43,11 @@ jobs:
 
       - name: Update kubeconfig
         run: |
-          aws eks update-kubeconfig \
-          --region us-east-2 \
-          --name skillpulse-cluster
+          aws eks update-kubeconfig --region us-east-2 --name skillpulse-cluster
 
       - name: Install Helm
         uses: azure/setup-helm@v4
 
       - name: Deploy to EKS using Helm
         run: |
-          helm upgrade --install skillpulse ./helm/skillpulse-chart \
-          --namespace skillpulse \
-          --create-namespace
+          helm upgrade --install skillpulse ./helm/skillpulse-chart --namespace skillpulse --create-namespace
