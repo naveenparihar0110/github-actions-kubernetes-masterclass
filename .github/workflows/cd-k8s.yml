@@ -1,10 +1,4 @@
-name: CD (kind cluster — manifest bump)
-
-on:
-  workflow_run:
-    workflows: []
-    types: []
-    branches: []
+name: CD (kind cluster — manifest
 
 jobs:
   bump-manifests:
