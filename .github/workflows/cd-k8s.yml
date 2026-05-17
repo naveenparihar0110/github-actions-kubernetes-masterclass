@@ -2,9 +2,9 @@ name: CD (kind cluster — manifest bump)
 
 on:
   workflow_run:
-    workflows: ["CI"]
+    workflows: []
     types: [completed]
-    branches: [main]
+    branches: []
 
 jobs:
   bump-manifests:
