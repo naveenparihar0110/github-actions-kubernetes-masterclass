@@ -10,12 +10,12 @@ image:
   repository: naveenparihar0110/skillpulse-frontend  
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "6339b9933d2375cd755b67363b93c667cc9b0108"
+  tag: 5c0c2e8ab622878797ce1c15550c0292b6cd25e3
 
 image:
   repository: naveenparihar0110/skillpulse-backend
   pullpolicy: IfnotPresent
-  tag: "6339b9933d2375cd755b67363b93c667cc9b0108"  
+  tag: 5c0c2e8ab622878797ce1c15550c0292b6cd25e3
   
   
   
