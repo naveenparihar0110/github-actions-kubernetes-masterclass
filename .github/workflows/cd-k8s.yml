@@ -3,7 +3,7 @@ name: CD (kind cluster — manifest bump)
 on:
   workflow_run:
     workflows: []
-    types: [completed]
+    types: []
     branches: []
 
 jobs:
