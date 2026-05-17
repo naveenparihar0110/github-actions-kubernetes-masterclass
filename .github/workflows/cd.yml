@@ -48,6 +48,9 @@ jobs:
       - name: Install Helm
         uses: azure/setup-helm@v4
 
+      - name: Debug AWS Identity
+        run: aws sts get-caller-identity
+
       - name: Deploy to EKS using Helm
         run: |
           helm upgrade --install skillpulse ./helm/skillpulse-chart --namespace skillpulse --create-namespace
